@@ -111,22 +111,22 @@ a {
         transition: 0.3s;
     }
 
-    .nav:focus-within .menu {
+    .nav.active .menu {
         display: block;
         visibility: visible;
         height: calc(100vh - 4.6875rem);
         overflow-y: auto;
     }
 
-    .nav:focus-within .hamburguer {
+    .nav.active .hamburguer {
         border-top-color: transparent;
     }
 
-    .nav:focus-within .hamburguer::before {
+    .nav.active .hamburguer::before {
         transform: rotate(135deg);
     }
 
-    .nav:focus-within .hamburguer::after {
+    .nav.active .hamburguer::after {
         transform: rotate(-135deg);
         top: -0.4375rem;
     }

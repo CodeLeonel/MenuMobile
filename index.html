@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <title>MenuMobile</title>
 </head>
 
@@ -12,8 +13,14 @@
     <header class="header">
         <a href="/" class="logo">Tiger Codes</a>
         <nav class="nav">
-            <button class="btn-menu">Menu<span class="hamburguer"></span></button>
-            <ul class="menu">
+            <button class="btn-menu" 
+            aria-label="Abrir Menu"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false">
+                Menu<span class="hamburguer"></span>
+            </button>
+            <ul class="menu" id="menu" role="menu">
                 <li><a href="/">Início</a></li>
                 <li><a href="/">Sobre</a></li>
                 <li><a href="/">Contato</a></li>
